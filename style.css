@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --light-brown: #c4a47c;
+  --white: #fff;
+  --black: #000000;
+  --dark-brown: #604829;
+  --dark-gray: #666;
+  --light-gray: #acacac;
+  --ff-roboto-slab: "Roboto Slab", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+html,
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: var(--ff-roboto-slab);
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: var(--dark-brown);
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+header div img {
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 1% 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 1.6rem;
+}
+
+header nav ul li a {
+  color: var(--light-brown);
+  text-transform: uppercase;
+  text-shadow: 3px 5px 2px var(--black);
+}
+
+#navList {
+  font-size: 4.8rem;
+  color: var(--light-brown);
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+/**************************/
+
+/* Main */
+main {
+  width: 100%;
+  background-color: var(--white);
+}
+
+/* title-banner-parallax */
+.title-banner-parallax {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  color: var(--white);
+}
+
+.title-banner-parallax h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  font-size: clamp(2.4rem, 1rem + 5vw, 9rem);
+  text-transform: uppercase;
+  width: 90%;
+  text-align: center;
+}
+
+#banner {
+  background-image: url("images/bg-parallax1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("images/patas-alfa.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color: var(--white);
+}
+
+#contacts h2,
+#contacts div {
+  background-color: var(--dark-brown);
+}
+
+#contacts h2 {
+  padding: 1%;
+  font-size: 3.2rem;
+}
+
+#contacts div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contacts div p {
+  padding: 1% 0;
+}
+
+#contacts a {
+  color: var(--white);
+}
+
+/**********************/
+
+/* text-container */
+.text-container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2% 0;
+  text-align: center;
+}
+
+.text-container h2 {
+  color: var(--light-brown);
+  margin: 4% 0;
+}
+
+.text-container p {
+  color: var(--dark-gray);
+  max-width: 1024px;
+  line-height: 35px;
+}
+
+/**************************/
+
+/**************************/
+
+/* footer */
+
+footer {
+  width: 100%;
+  background-color: var(--light-brown);
+  text-align: center;
+  padding: 2%;
+  position: relative;
+}
+
+footer p {
+  margin-bottom: 0.5%;
+  color: var(--black);
+}
+
+footer a {
+  color: var(--white);
+  font-size: 60px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--dark-brown);
+  border-radius: 50%;
+  position: absolute;
+  right: 5%;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+/**************************/
+
+@media (max-width: 425px) {
+  header {
+    position: relative;
+  }
+  header div nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+    z-index: 9999;
+    width: none;
+    background-color: var(--dark-brown);
+    padding: 2%;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+
+  #navList {
+    display: block;
+  }
+
+  footer a {
+    display: none;
+  }
+
+  .hide {
+    display: none;
+  }
+}
