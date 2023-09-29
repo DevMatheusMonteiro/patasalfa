@@ -1,10 +1,10 @@
-const toggleNavList = document.getElementById("navList");
-const navList = document.querySelector("header nav");
+const toggleNavList = document.getElementById("toggleNavList");
+const navList = document.querySelector(".navList");
 
 toggleNavList.onclick = () => {
   const span = toggleNavList.querySelector("span");
 
   span.textContent = navList.classList.toggle("hide")
-    ? "Abrir Lista de Navegação"
-    : "Fechar Lista de Navegação";
+    ? "Abrir menu de navegação"
+    : "Fechar menu de navegação";
 };

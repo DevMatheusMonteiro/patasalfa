@@ -1,63 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Vitor Duarte">
-    <meta name="description" content="Para ter um melhor convívio com seu pet a Patas Alfa oferece um treinamento eficaz por um adestrador bem preparado!">
-    <meta name="keywords" content="Patas Alfa Adestramento, adestrador, adestramento para cães, adestrar para pets, adestrador rio de janeiro, adestrador
-    para cachorros, adestramento canino, adestramento canino rj, adestramento para cachorros rio de janeiro, adestramento para cachorros no rj">
-
-    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patas Alfa - Adestramento de Cães</title>
+    <meta
+      name="description"
+      content="Patas Alfa é especializada em treinamento de cães, oferecendo adestramento básico, avançado e muito mais. Transforme seu relacionamento com seu cão hoje."
+    />
+    <meta
+      name="keywords"
+      content="Patas Alfa, adestramento de cães, treinamento de cães, relacionamento com cães"
+    />
+    <meta name="author" content="Patas Alfa" />
+    <meta property="og:title" content="Patas Alfa - Adestramento de Cães" />
+    <meta
+      property="og:description"
+      content="Transforme seu relacionamento com seu cão com o treinamento da Patas Alfa. Oferecemos adestramento básico, avançado e muito mais."
+    />
+    <meta property="og:url" content="https://patasalfa.com.br/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Patas Alfa - Adestramento de Cães" />
+    <meta
+      name="twitter:description"
+      content="Transforme seu relacionamento com seu cão com o treinamento da Patas Alfa. Oferecemos adestramento básico, avançado e muito mais."
+    />
+    <meta http-equiv="Content-Language" content="pt-br" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="script.js" defer></script>
-
-    <title>Adestramento - Patas Alfa</title>
-</head>
-
-<body>
-    <header>
-        <div>
-            <img src="images/patas-alfa.jpg"></img>
-            <button class="ph ph-list" id="navList">
-                <span class="sr-only">Abrir Lista de navegação</span>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div id="header-container">
+          <img src="images/patas-alfa.jpg" alt="Logo Patas Alfa" />
+          <div class="nav-container">
+            <button class="ph ph-list" id="toggleNavList">
+              <span class="sr-only">Abrir menu de navegação</span>
             </button>
-            <nav class="hide">
-                <ul>
-                    <li><a href="#infos">Informações</a></li>
-                    <li><a href="#contacts">Contatos</a></li>
-                </ul>
+            <nav class="navList hide">
+              <ul>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+              </ul>
             </nav>
+          </div>
         </div>
-    </header>
-    <main>
-        <section class="title-banner-parallax" id="banner">
-            <h1>Patas Alfa <br> Adestramento</h1>
-        </section><!-- title-banner-parallax-->
+      </header>
+      <main>
+        <section id="banner">
+          <div>
+            <h1>Patas Alfa Adestramento</h1>
+            <small>Vitor Duarte - Adestrador</small>
+          </div>
+        </section>
 
-        <section class="text-container" id="infos">
-            <h2>O que é o Patas Alfa?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, eum? Eveniet, ad labore quia similique deleniti iste repellat optio nostrum sit voluptatem, facere consectetur sunt. Exercitationem maxime ut tenetur voluptas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi consequuntur vitae facilis est ab mollitia iusto laborum assumenda, eum consequatur praesentium officiis eveniet placeat perspiciatis dolorum obcaecati ipsum magni. Esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias quae inventore assumenda culpa, dolore, corporis accusamus perferendis possimus animi neque suscipit dicta ratione aliquam? Non distinctio aliquid excepturi iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ut est necessitatibus reiciendis placeat harum, magni atque molestiae, vitae recusandae optio porro sed soluta laboriosam enim, ipsum laborum? Molestias, earum?</p>
-        </section><!-- text-container -->
+        <section id="about">
+          <h2>Sobre Nós</h2>
+          <p>
+            Na Patas Alfa, acreditamos que todo cão merece a oportunidade de ser
+            o melhor que pode ser. Nossa missão é capacitar você a compreender e
+            se comunicar eficazmente com seu cão, garantindo uma convivência
+            harmoniosa.
+          </p>
+        </section>
 
-        <section class="title-banner-parallax" id="contacts">
-            <h2>Contatos</h2>
-            <div>
-                <p><a href="tel:21999995555">Telefone e WhatsApp: (21) 99999-5555</a></p>
-                <p><a href="mailto:contato@manhattan.com.br">Email: contato@email.com.br</a></p>
-            </div>
-        </section><!-- title-banner-parallax parallax -->
-    </main>
-    <footer>
-        <p>&copy; Adestramento - Patas Alfa</p>
-        <a href="#banner" class="ph ph-arrow-up"></a>
-    </footer>
-</body>
+        <section id="services">
+          <h2>Nossos Serviços</h2>
+          <dl>
+            <dt>Treinamento Básico e Avançado</dt>
+            <dd>
+              Desde comandos básicos até habilidades avançadas, oferecemos
+              programas de treinamento abrangentes para cães de todas as idades
+              e raças.
+            </dd>
 
+            <dt>Adestramento de Comportamento</dt>
+            <dd>Lidamos com problemas comportamentais como</dd>
+
+            <dt>Socialização</dt>
+            <dd>
+              Oferecemos sessões de socialização para ajudar seu cão a interagir
+              de forma saudável com outros cães e pessoas.
+            </dd>
+            <dt>Treinamento em Casa</dt>
+            <dd>
+              Nosso treinador pode trabalhar com você e seu cão no conforto da
+              sua casa, abordando problemas específicos do ambiente doméstico.
+            </dd>
+            <dt>Workshops e Eventos</dt>
+            <dd>
+              Organizamos workshops educacionais e eventos interativos para
+              promover o entendimento e a conscientização sobre o comportamento
+              canino.
+            </dd>
+          </dl>
+        </section>
+
+        <section id="contact">
+          <h2>Entre em Contato</h2>
+          <p>
+            Estamos ansiosos para ajudá-lo e seu cão a embarcarem juntos em uma
+            jornada de aprendizado e crescimento. Entre em contato conosco para
+            agendar uma consulta gratuita e dar o primeiro passo em direção a
+            uma vida com seu cão mais feliz e equilibrado.
+          </p>
+          <address>
+            <p>
+              <a
+                href="https://api.whatsapp.com/send?phone=5521980124695"
+                target="_blank"
+              >
+                <i class="ph ph-whatsapp-logo">
+                  <span class="sr-only">WhatsApp</span>
+                </i>
+                <span>(21) 98012-4695</span>
+              </a>
+            </p>
+            <p>
+              <a href="mailto:patasalfa@gmail.com">
+                <i class="ph ph-envelope-simple">
+                  <span class="sr-only">Email</span>
+                </i>
+
+                <span>patasalfa@gmail.com</span>
+              </a>
+            </p>
+          </address>
+        </section>
+      </main>
+
+      <footer>
+        <p>Siga-nos nas Redes Sociais:</p>
+        <ul>
+          <li>
+            <a
+              class="ph ph-instagram-logo"
+              href="https://www.instagram.com/adestradorvitor/"
+              target="_blank"
+            >
+              <span class="sr-only">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
 </html>
